@@ -1,0 +1,6 @@
+[submodule "node_modules/request"]
+	path = node_modules/request
+	url = https://github.com/request/request.git
+[submodule "node_modules/web-resource-inliner"]
+	path = node_modules/web-resource-inliner
+	url = https://github.com/Smarp/web-resource-inliner.git
