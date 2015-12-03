@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "json-rpc2": "1.0.2",
-    "web-resource-inliner": "git://github.com/Smarp/web-resource-inliner.git#e4233af"
+    "web-resource-inliner": "git://github.com/Smarp/web-resource-inliner.git#7f2eadb"
   },
   "scripts": {
     "test": "mocha test",
