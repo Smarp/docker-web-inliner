@@ -52,7 +52,7 @@ server.expose(process.env.MS_INLINER_METHOD, function (args, opt, callback) {
 });
 
 // listen creates an HTTP server on localhost only 
-server.listenRaw(process.env.MS_INLINER_RAW_PORT, process.env.MS_INLINER_ADDRESS);
+server.listenRaw(process.env.MS_INLINER_TCP_PORT, process.env.MS_INLINER_ADDRESS);
 server.listen(process.env.MS_INLINER_HTTP_PORT, process.env.MS_INLINER_ADDRESS);
-
+console.log("listening to tpc://"+process.env.MS_INLINER_ADDRESS+":"+ process.env.MS_INLINER_TCP_PORT+" and http://"+process.env.MS_INLINER_ADDRESS+":"+process.env.MS_INLINER_HTTP_PORT)
 module.exports = {"inline": inline};
