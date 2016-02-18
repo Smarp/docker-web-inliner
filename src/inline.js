@@ -18,18 +18,13 @@ var server = new rpc.Server(rpcOptions);
 
 function inline(html, reqUrl, callback){
   var time = (new Date()).getTime()
-  try {
-    var host = url.parse(reqUrl).hostname;
-  } catch (e) {
-    console.warn("Malformed url", e)
-  }
   if (!html){
     callback(null, {"InlinedHtml":""})
   } else {
     try {
-      console.log(host ? host :  reqUrl ? reqUrl : "")
+      console.log(reqUrl)
       inliner.html({fileContent: html,
-                    relativeTo: host ? host :  reqUrl ? reqUrl : ""},
+                    relativeTo: reqUrl},                    
                    function(err, data){
                      if (err){
                        console.warn(inliningErrorString)
