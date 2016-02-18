@@ -4,7 +4,7 @@
   },
   "name": "html-inline-rpc-service",
   "description": "Html inlining RPC microservice",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "keywords": [
     "inline",
     "js",
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "json-rpc2": "1.0.2",
-    "web-resource-inliner": "git://github.com/Smarp/web-resource-inliner.git#9866c36"
+    "web-resource-inliner": "git://github.com/Smarp/web-resource-inliner.git#2e7da3f"
   },
   "scripts": {
     "test": "mocha test",
